@@ -1,0 +1,49 @@
+{
+    "cliente": {
+        "nome": "string",
+        "cpf": "string",
+        "e-mail": "string",
+        "senha": "string",
+        "endereco": {
+            "uf": "string",
+            "cidade": "string",
+            "bairro": "string",
+            "rua": "string",
+            "numero": "int",
+			"complemento": "string"
+        },
+        "telefone": "int"
+    },
+	
+	"adm": {
+		"cpf": "string",
+		"nome": "string",
+		"senha": "string",
+		"e-mail": "string",
+		
+	},
+
+    "categoria": {
+        "categoria": "int"
+    },
+
+    "produto": {
+        "codigo": "string",
+        "nome": "string",
+        "categoria": "categoria",
+        "valor": "double",
+        "estoque": "int"
+    },
+
+    "venda": {
+        "cliente": "usuario",
+        "itens": [
+            {
+                "produto": "produto", 
+                "quantidade": "int"
+            }       
+        ],
+        "subtotal": "double",
+        "data": "date"
+    }
+}
