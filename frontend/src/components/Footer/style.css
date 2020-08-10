@@ -1,0 +1,27 @@
+footer{
+    width:100%;
+    padding:15px;
+    background-color:black;
+    color:white;
+    font: 400 14px Roboto, sans-serif;
+
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer a:hover{
+    color:rgba(100,122,142,1);
+    text-decoration:underline;
+}
+
+footer div {
+    padding:5px 30px;
+    border-right: solid 1px var(--color2);
+    display:flex;
+    flex-direction: column;
+}
+
+footer div:last-child{
+    border: none;
+}
